@@ -1,0 +1,175 @@
+--- 
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :post
+    uri: http://registration.baa.org:80/2011/cf/Public/iframe_ResultsSearch.cfm?mode=results
+    body: 
+    headers: 
+      accept: 
+      - "*/*; q=0.5, application/xml"
+      content-type: 
+      - application/x-www-form-urlencoded
+      accept-encoding: 
+      - gzip, deflate
+      content-length: 
+      - "11"
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      x-powered-by: 
+      - ASP.NET
+      content-type: 
+      - text/html; charset=UTF-8
+      server: 
+      - Microsoft-IIS/6.0
+      date: 
+      - Sat, 26 Nov 2011 06:02:18 GMT
+      set-cookie: 
+      - BIGipServerBAA_registrationpool=304677130.20480.0000; path=/
+    body: |
+      <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+      <html xmlns="http://www.w3.org/1999/xhtml">
+      <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <title>B.A.A. Marathon 2011: Results Search</title>
+      <!-- <meta name="description" content="Description" />
+      	<meta name="keywords" content="keywords, keywords" />-->
+      	<link rel="stylesheet" type="text/css" href="/_CSS/IframeStyle.css"/>
+      </head>
+      
+      <body>
+      <!-- iframe_content -->
+      <div class="iframe_content">
+      	<div class="iframe_content_pad">
+      
+      	
+      
+      <div class="tablegrid">
+      <div class="tablegrid_pad">
+      
+      <table class="tablegrid_title">
+      	<tr>
+      		<th>
+      		<span class="white_text">2011  BOSTON MARATHON RESULTS</span>
+      		</th>
+      	</tr>
+      </table>
+      
+      
+      	
+      	<script language="JavaScript" type="text/javascript">
+      	<!--
+      	function OpenDetailsWindow(theID) {
+      		var theWindowString = "/2011/cf/public/wnd_iAthleteDetailsWindow.cfm?RaceAppID=" +theID
+      		var AthleteDetailsWindow = window.open(theWindowString, "AthleteDetails", "width=500,height=450,status=no,resizable=no,directories=no,toolbar=yes,location=no,scrollbars=yes")
+      		if (AthleteDetailsWindow != null)
+      			{AthleteDetailsWindow.focus()}
+      	}
+      	//-->
+      	</script>
+      
+      	<table class="tablegrid_nav">
+      	
+      	<tr>
+      	<td>
+      	<form method="post" action="iframe_ResultsSearch.cfm?mode=entry">
+      	<input class="submit_button" type="submit" value="Search Again"/></form></td>
+      	<td class="tablegrid_list_item"><form method="post" action="iframe_ResultsSearch.cfm?mode=entry&FirstName=&LastName=&CountryOfCtzID=0&CountryOfResID=0&StateID=0&GenderID=0&City=&ReportingSegmentID=1&AwardsDivisionID=0&QualClassID=0&VarTargetCount=10">
+      	<input class="submit_button" type="submit" value="Refine Your Search"/></form>
+      	</td>
+      	</tr>
+      	</table>
+      	
+      		<table class="tablegrid_nav">
+      		<tr>
+      		<td colspan="2">
+      		
+      			&nbsp;
+      		
+      		</td>
+      		</tr>
+      		</table>
+      	
+      
+      	<table class="tablegrid_list">
+      	<tr>
+      	<td class="tablegrid_list_item">
+      	
+      	
+      
+      				<table class="tablegrid_table">
+      					
+      					
+      					
+      						<thead>
+      						<tr>
+      							
+      								<th>Bib</th>
+      							
+      								<th>Name</th>
+      							
+      								<th>Age</th>
+      							
+      								<th>M/F</th>
+      							
+      								<th>City</th>
+      							
+      								<th>St</th>
+      							
+      								<th>Ctry</th>
+      							
+      								<th>Ctz</th>
+      							
+      								<th>&nbsp;</th>
+      							
+      						</tr>
+      						</thead>
+      						
+      					
+      					<tbody>
+      					
+      					<tr>
+      					<td colspan="9">		
+      						<table class="tablegrid_table">
+      							<tr>
+      								<td width="50%">
+      								
+      									&nbsp;
+      								
+      								</td>
+      								
+      								<td>
+      								
+      									&nbsp;
+      										
+      								</td>
+      							</tr>
+      						</table>							
+      					</td>
+      					</tr>
+      					
+      					
+      					
+      					</tbody>
+      				</table>
+      
+      	
+      
+      	</td>
+      	</tr>
+      
+      	
+          </table>
+      
+      
+      </div>
+      </div>
+      
+      	</div>
+      </div>
+      </body>
+      </html>
+
+    http_version: "1.1"
